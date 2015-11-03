@@ -1,0 +1,33 @@
+Lab Report
+Tracy Haupt, Sterling Huber, Emily Ruppel, Samantha Steffanous
+Lab09
+October 29, 2015
+
+Lab09 was our first collaboration as a group in order to create a lightweight dataflow 
+programming integrated in C for a histogram. By being given a control flow graph, we were 
+expected to utilize a provided example to understand how the structure of the graph is created 
+and how actors are implemented. Each actor produces and consumes a predefined amount of 
+data that exist in FIFOs known as edges. 
+
+The application being developed in Lab09 is histogram based for image processing. 
+After a copious amount of discussion, we ironed out the organization of the project. In order to 
+process a small tile and match it’s histogram to the larger image, we split the process into 
+separate portions. In these portions, we determined which actors fire, when they are enabled, 
+when they are invoked and how to create the actors as objects. Beyond this stage, our actors 
+must be linked together by a series of FIFOs. After the structure and each node is in operating 
+condition, we wrote tests in order to insure each stage is working correctly. 
+
+Our approach to this lab has been to distribute work while sustaining understanding of 
+the entire project. One person was dedicated to testing our code. Originally, we split the 
+remainder to dealing with source actors, objtr_hist_gen and the objtr_hist_dist_map portions. 
+While this remained true in nature, there was a lot of crossover between each element. 
+Additionally, the source actors ended up processing files sufficiently such that we did not need 
+to edit the file. However, there was quite a bit of discussion about what needed to be altered 
+and where certain attributes are set. 
+
+Some of the difficulties of this lab were based upon the fact that we had no central 
+repository which would aid in collaboration. Our solution for the time being was to share files via 
+GoogleDocs in order to make sure all of our code is being communicated to each other. The
+largest issue in this process is that we are not working from the same version of the code and 
+each portion was split. Once a repository is created, our version control and collaboration will be 
+more efficient.
